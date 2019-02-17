@@ -2,10 +2,8 @@
  * <p>Returns every line from tranviascoruna.com website throught web parsing
  * using Jsoup.</p>
  *
- * @return ArrayList of Strings with the lines on the website
- * @exception
+ * @return {@linkplain ArrayList} of Strings with the lines on the website
  * @throws IOException if website cannot be processed correctly
- * @
  */
 private ArrayList<String> getLineasTranviasCoruna() throws IOException {
     ArrayList<String> lineasAutobus = new ArrayList<>();
