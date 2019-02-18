@@ -10,8 +10,8 @@ private ArrayList<String> getLineasTranviasCoruna() throws IOException {
     String url_lineas = "http://www.tranviascoruna.com/lineas-y-horarios/";
     //Start party.
     Document doc = Jsoup.connect(url_lineas).get();
-    Elements a = doc.select("a[href]");
-    for (Element e : a) {
+    Elements enlacesElementos = doc.select("a[href]");
+    for (Element e : enlacesElementos) {
         String enlace = e.attr("href");
         String urlBase = "http://www.tranviascoruna.com/lineas-y-horarios/?linea=";
         if (enlace.contains(urlBase)) {
